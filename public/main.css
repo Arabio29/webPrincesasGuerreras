@@ -1,0 +1,90 @@
+@import "./fontawesome/scss/fontawesome.scss";
+body {
+    margin: 0;
+    padding-top: 86px;
+    
+
+}
+
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.boton-redondo {
+    border-radius: 20px;
+    background: #FF4DE9;
+    color: white;
+
+  }
+
+  .boton-redondo:hover{
+    background-color: #e711ce;
+    color: white; 
+  }
+
+#hero {
+    min-height: 100vh;
+    position: relative;
+}
+
+.navbar-brand img {
+    width: 60px; 
+    height: auto;
+} 
+
+
+ 
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d; 
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.titulo {
+    padding-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.titulo h1{
+    font-size: 5vh;
+}
+
+.mi-seccion {
+    background-color:#55B5FF;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .somos-princesas-logo{
+    width:20%;
+    height: auto;
+
+  }
+
+  .guerreras{
+    color: #FF4DE9;
+  }
+

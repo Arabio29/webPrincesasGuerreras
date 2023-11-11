@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--boostrap-->
+    <link rel="stylesheet" href="style.css" />
+    <!--import main.css-->
+    <link rel="stylesheet" href="./public/main.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>FPGF</title>
+  </head>
+  <body>
+    <!--contacto arriba de la pagina-->
+    <div class="contenedor">
+      <div class="row">
+        <div class="col-md-3 p-2 text-center">
+          <div class="item1">
+            <a
+              class="btn mr-2 p-2"
+              href="https://github.com/Arabio29"
+              target="_blank"
+              ><i class="fa-solid fa-comments fa-lg" style="color: #ff4de9"></i
+            ></a>
+            <a href="" class="nav-link">Chatea con nosotros</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-2 text-center">
+          <div class="item1">
+            <a
+              class="btn mr-2 p-2"
+              href="https://github.com/Arabio29"
+              target="_blank"
+              ><i class="fa-solid fa-phone fa-lg" style="color: #ff4de9"></i
+            ></a>
+            <a href="" class="nav-link">Llamanos</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-2 text-center">
+          <div class="item1">
+            <a
+              class="btn mr-2 p-2"
+              href="https://github.com/Arabio29"
+              target="_blank"
+              ><i class="fa-solid fa-envelope fa-lg" style="color: #ff4de9"></i
+            ></a>
+            <a href="" class="nav-link">Correo</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-2 text-center">
+          <div class="item4">
+            <a class="btn color-ligths boton-redondo"
+              ><i
+                class="fa-solid fa-heart fa-lg mr-2"
+                style="color: #ffffff"
+              ></i>
+              Quiero donar</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--menu nav-->
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./public/img/logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon boton-redondo"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Quienes somos</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Programas de ayuda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#"
+                    >Another action</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item text-white" href="#"
+                    >Something else here</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light boton-redondo" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--video fondo-->
+    <main id="hero">
+      <div class="titulo text-white">
+        <div class="">
+          <h1 class="custom-heading">LIDERAZGO Y EMPODERAMIENTO FEMENINO</h1>
+        </div>
+        <div>
+          <p class="">Para prevenir violencias basadas en genero</p>
+        </div>
+        <div>
+          <button class="btn btn-secondary boton-redondo">
+            Como apoyarnos
+          </button>
+          <button class="btn btn-primary boton-redondo">Quienes somos</button>
+        </div>
+      </div>
+
+      <video autoplay muted loop id="myVideo">
+        <source src="./public/video/vidi.mp4" type="video/mp4" />
+      </video>
+      <div class="capa"></div>
+    </main>
+
+    <!--Somos fundacion princesas guerreas-->
+    <div class="container">
+      <div class="mt-5 mb-5">
+        <div class="d-flex justify-content-center align-items-center">
+          <img
+            src="./public/img/logo.png"
+            alt=""
+            class="somos-princesas-logo mx-auto"
+          />
+        </div>
+
+        <div>
+          <h1 class="text-center display-2">
+            <span>Somos </span>
+            <span class="text-secondary">Fundación </span>
+            <span class="text-primary">Princesas </span>
+            <span class="guerreras">Guerreras</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!--Danos un impulso imagenes-->
+    <div class="container-fluid mi-seccion">
+      <div class="mt-5 mb-5">
+        <h1 class="text-white text-center">DÁNOS UN IMPULSO</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/musicac.png"
+              alt="Imagen 1"
+              class="img-fluid imagen-redonda"
+            />
+            <div class="texto-imagen">Texto debajo de la imagen 1</div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/deportec.png"
+              alt="Imagen 2"
+              class="img-fluid imagen-redonda"
+            />
+            <div class="texto-imagen">Texto debajo de la imagen 2</div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/dibujoc.png"
+              alt="Imagen 3"
+              class="img-fluid imagen-redonda"
+            />
+            <div class="texto-imagen">Texto debajo de la imagen 3</div>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/danzac.png"
+              alt="Imagen 4"
+              class="img-fluid imagen-redonda"
+            />
+            <div class="texto-imagen">Texto debajo de la imagen 4</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nuestra historia</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary boton-redondo">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Misión</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary boton-redondo">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Visión</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary boton-redondo">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--video institucional-->
+    <section class="container">
+      <div class="mt-5 mb-5 text-center">
+        <iframe
+          width="70%"
+          height="500"
+          src="https://www.youtube.com/embed/6eIehf2Zn3M?si=oYh-Y7ZqybiYj8zb"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!--tarjetas que hacemos-->
+    <section class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top w-100"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="./public/img/bisuteria.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--carrusel inicio-->
+    <section>
+      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner justify-content-center">
+          <div class="carousel-item active">
+            <img src="./public/img/ff1.jpg" class="img-fluid w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Fundación Princesas Guerreras</h1>
+              <p>¡Empoderando nuestro futuro!</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="./public/img/ff2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Fundación Princesas Guerreras</h1>
+              <p>¡Empoderando nuestro futuro!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./public/img/ff3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Fundación Princesas Guerreras</h1>
+              <p>¡Empoderando nuestro futuro!</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev boton-redondo"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next boton-redondo"
+          type="button"
+          data-bs-target="#carouselExampleRide"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
