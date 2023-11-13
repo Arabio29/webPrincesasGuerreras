@@ -6,7 +6,9 @@ body {
 
 h1 {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
+  font-weight: 1000;
+  font-size: 34px;
+  font-size: 34px;
 }
 
 a {
@@ -15,7 +17,6 @@ a {
 
 .boton-redondo {
   border-radius: 20px;
-  background: #ff4de9;
   color: white;
 }
 
@@ -24,10 +25,35 @@ a {
   color: white;
 }
 
-#hero {
-  min-height: 100vh;
-  position: relative;
+.boton-donar{
+  background-color: #FF4DE9;
 }
+
+
+
+#hero {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  height: 70vh;
+}
+
+.titulo {
+  flex-direction: column;
+  display: flex;
+  z-index: 2;
+}
+
+.titulo-liderazgo{
+  
+}
+
+.titulo h1 {
+  font-size: 5vh;
+}
+
 
 .navbar-brand img {
   width: 60px;
@@ -54,26 +80,15 @@ video {
   mix-blend-mode: overlay;
 }
 
-.titulo {
-  padding-top: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  margin: auto;
-  position: relative;
-  z-index: 2;
-}
-
-.titulo h1 {
-  font-size: 5vh;
-}
-
 .mi-seccion {
   background-color: #55b5ff;
   height: auto;
   padding: 20px;
+}
+
+#caja1{
+  max-widtht: 100% !important;
+  background-color: #55b5ff;
 }
 
 .somos-princesas-logo {
@@ -117,3 +132,30 @@ video {
 .mi-div {
   word-wrap: break-word; /* Permite que el texto se ajuste al contenedor y salte de línea si es necesario */
 }
+
+.icon{
+  color: #FF4DE9;
+}
+
+#impulso-texto{
+  font-weight: 900;
+  font-size: 64px;
+}
+
+.footerr{
+  background-color: #55B5FF;
+}
+
+.busca input{
+  border-radius: 20px;
+}
+
+#navbarSupportedContent {
+  margin-left: 30px;
+}
+
+h2.sobre {
+  color: #FF4DE9;
+}
+
+

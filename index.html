@@ -18,11 +18,15 @@
     <!--icono en pestaña de web-->
     <link rel="icon" href="./public/img/logoo.ico" type="image/png">
 
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <title>FPGF</title>
   </head>
   <body>
     <!--contacto arriba de la pagina-->
-    <div class="contenedor">
+    <div class="contenedor" id="inicio">
       <div class="row">
         <div class="col-md-3 p-2 text-center">
           <div class="item1">
@@ -60,23 +64,23 @@
           </div>
         </div>
 
-        <div class="col-md-3 p-2 text-center">
+        <div class="col-md-3 p-2 text-center d-flex justify-content-center align-items-center">
           <div class="item4">
-            <a class="btn color-ligths boton-redondo"
+            <a class="btn boton-redondo boton-donar"
               ><i
                 class="fa-solid fa-heart fa-lg mr-2"
                 style="color: #ffffff"
               ></i>
               Quiero donar</a
-            >
+            >  
           </div>
         </div>
       </div>
     </div>
 
     <!--menu nav-->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+      <div class="container-fluid" id="conter">
         <a class="navbar-brand" href="#">
           <img src="./public/img/logo.png" alt="" />
         </a>
@@ -95,68 +99,77 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
+              <a class="nav-link active text-white" aria-current="page" href="#inicio"
                 >Inicio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Quienes somos</a>
+              <a class="nav-link text-white" href="#sobre-nosotros">Sobre nosotros</a>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle text-white"
-                href="#"
+                href=""
                 role="button"
                 data-bs-toggle="dropdown"
+                data-bs-target=""
                 aria-expanded="false"
               >
                 Programas de ayuda
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-white" href="#">Action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Liderazgo</a></li>
                 <li>
-                  <a class="dropdown-item text-white" href="#"
-                    >Another action</a
+                  <a class="dropdown-item text-dark" href="#"
+                    >Emprendimiento</a
                   >
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item text-white" href="#"
-                    >Something else here</a
+                  <a class="dropdown-item text-dark" href="#"
+                    >Deporte</a
                   >
                 </li>
+                <li><a class="dropdown-item text-dark" href="#">Arte</a></li>
+                <li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contacto</a>
+              <a class="nav-link text-white" href="#que-hacemos">Que hacemos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contacto">Contacto</a>
             </li>
           </ul>
 
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-light boton-redondo" type="submit">
-              Buscar
-            </button>
-          </form>
+          <a class="btn boton-redondo boton-donar"
+          ><i
+            class="fa-solid fa-heart fa-lg"
+            style="color: #ffffff"
+          ></i>
+          Quiero donar</a
+        >
         </div>
       </div>
     </nav>
 
+
     <!--video fondo-->
     <main id="hero">
-      <div class="titulo text-white">
-        <div class="">
-          <h1 class="custom-heading">LIDERAZGO Y EMPODERAMIENTO FEMENINO</h1>
+      <div class="titulo text-white m-3">
+        <div class="titulo-liderazgo">
+          <h1 id="custom-heading">LIDERAZGO 
+            Y 
+            <br>
+            EMPODERAMIENTO 
+            <br>
+            FEMENINO</h1>
         </div>
         <div>
-          <p class="">Para prevenir violencias basadas en genero</p>
+          <p class="h5 mb-4">Para prevenir violencias basadas en genero</p>
         </div>
-        <div>
+        <div class="mb-5">
           <button class="btn btn-secondary boton-redondo">
             Como apoyarnos
           </button>
@@ -171,7 +184,7 @@
     </main>
 
     <!--Somos fundacion princesas guerreas-->
-    <div class="container">
+    <div class="container somos">
       <div class="mt-5 mb-5">
         <div class="d-flex justify-content-center align-items-center">
           <img
@@ -193,9 +206,10 @@
     </div>
 
     <!--Danos un impulso imagenes-->
-    <div class="container-fluid text-center mi-seccion">
+  <div id="caja1">
+    <div class="container text-center mi-seccion">
       <div class="mt-5 mb-5">
-        <h1 class="text-white text-center">DÁNOS UN IMPULSO</h1>
+        <h2 id="impulso-texto" class="text-white text-center">DÁNOS UN IMPULSO</h1>
       </div>
       <div class="row">
         <div class="col-sm-3 mb-5">
@@ -211,7 +225,7 @@
                 <p class="texto-principal-imagen">
                   Inversor/a
                   <br />
-                  socialll
+                  social
                 </p>
               </div>
             </div>
@@ -272,59 +286,69 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!--Tarjetas historia, mision y vision-->
-    <section class="container mt-5">
-      <div class="row">
+    <section class="container mt-5 text-center align-items-center" id="sobre-nosotros">
+      <div class="mt-5 mb-5">
+        <h2 class="sobre" id="impulso-texto">
+          SOBRE NOSOTROS
+        </h2>
+      </div>
+      <div class="row ">
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <a href="" class="text-center">
+              <i class="icon fa-solid fa-book fa-10x mt-2" ></i>
+            </a>
             <div class="card-body">
               <h5 class="card-title">Nuestra historia</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </p>
-              <a href="#" class="btn btn-primary boton-redondo">Ver más</a>
+              <a href="#" class="btn btn-primary boton-redondo btn-rosa">Ver más</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <a href="" class="text-center">
+              <i class="icon fa-solid fa-flag fa-10x mt-2" ></i>
+            </a>
             <div class="card-body">
               <h5 class="card-title">Misión</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Promover los derechos, el empoderamiento y la participación de niñas, mujeres y familias, mediante acciones dirigidas a incentivar el liderazgo y prevenir problemáticas sociales a través de la formación en el deporte, la recreación, el arte, la cultura y el emprendimiento, contribuyendo al mejoramiento de la calidad de vida y a la construcción de territorios de paz.
               </p>
-              <a href="#" class="btn btn-primary boton-redondo">Ver más</a>
+              <a href="#" class="btn btn-primary boton-redondo btn-rosa">Ver más</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
+            <a href="" class="text-center">
+              <i class="icon fa-solid fa-eye fa-10x mt-2" ></i>
+            </a>
             <div class="card-body">
               <h5 class="card-title">Visión</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                Ser un referente regional en la promoción de los derechos, el empoderamiento y la participación social de niñas, mujeres  y familias de comunidades vulnerables, contribuyendo a la transformación social. 
+
               </p>
-              <a href="#" class="btn btn-primary boton-redondo">Ver más</a>
+              <a href="#" class="btn btn-primary boton-redondo btn-rosa">Ver más</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="que-hacemos">
+      <div>
+        <div class="container bg bg-secondary w-100
+      h-auto mt-5">
+          <div>
+            <h2>Que hacemos</h2>
           </div>
         </div>
       </div>
@@ -345,110 +369,20 @@
       </div>
     </section>
 
-    <!--tarjetas que hacemos-->
-    <section class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top w-100"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img
-              src="./public/img/bisuteria.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
+    <!--frase-->
+    <div class="container">
+      <div class="mt-5">
+        <h1 class="text-center display-4">
+          <span class="text-secondary">“Transformamos vidas con amor, compromiso, honestidad y gratitud, construyendo paz.”</span>
+          <span class="text-secondary"></span>
+          <span class="text-primary"></span>
+          <span class="guerreras"></span>
+        </h1>
       </div>
-    </section>
+    </div>
+  </div>
+
+    
 
     <!--carrusel inicio-->
     <section>
@@ -498,6 +432,52 @@
       </div>
     </section>
 
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <section id="contacto">
+      <div>
+        <div class="container bg bg-secondary w-100
+      h-auto mt-5">
+          <div>
+            <h2>Contactanos</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-fluid text-light mt-5 footerr">
+        <div class="row p-4">
+    
+          <!-- Columna 1 -->
+          <div class="col-md-3">
+            <h5>Columna 1</h5>
+            <a class="navbar-brand" href="#">
+              <img src="./public/img/logo.png" alt="" />
+            </a>
+            <a href="" class="h6">+57 3046319372</a>
+          </div>
+    
+          <!-- Columna 2 -->
+          <div class="col-md-3">
+            <h5>ENLACES <br> RÁPIDOS</h5>
+            <p>Contenido de la columna 2.</p>
+          </div>
+    
+          <!-- Columna 3 -->
+          <div class="col-md-3">
+            <h5>CONSTRUYE CON<br> NOSOTRAS UN <br> PÁIS DE PAZ</h5>
+            <p>Contenido de la columna 3.</p>
+          </div>
+    
+          <!-- Columna 4 -->
+          <div class="col-md-3">
+            <h5>Columna 4</h5>
+            <p>Contenido de la columna 4.</p>
+          </div>
+    
+        </div>
+      </div>
+    </footer>
+
+
   </body>
 </html>
