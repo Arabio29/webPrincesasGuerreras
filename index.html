@@ -24,7 +24,7 @@
 
     <title>FPGF</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
     <!--contacto arriba de la pagina-->
     <div class="contenedor" id="inicio">
       <div class="row">
@@ -99,7 +99,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#inicio"
+              <a class="nav-link active text-white" aria-current="page" href="#"
                 >Inicio</a
               >
             </li>
@@ -170,10 +170,10 @@
           <p class="h5 mb-4">Para prevenir violencias basadas en genero</p>
         </div>
         <div class="mb-5">
-          <button class="btn btn-secondary boton-redondo">
+          <a type="button" href="#caja1" class="btn btn-secondary boton-redondo">
             Como apoyarnos
-          </button>
-          <button class="btn btn-primary boton-redondo">Quienes somos</button>
+          </a>
+          <a type="button" href="#sobre-nosotros" class="btn btn-primary boton-redondo">Quienes somos</a>
         </div>
       </div>
 
@@ -289,7 +289,7 @@
   </div>
 
     <!--Tarjetas historia, mision y vision-->
-    <section class="container mt-5 text-center align-items-center" id="sobre-nosotros">
+    <section  id="sobre-nosotros" class="container mt-5 mb-5 text-center align-items-center">
       <div class="mt-5 mb-5">
         <h2 class="sobre" id="impulso-texto">
           SOBRE NOSOTROS
@@ -343,16 +343,88 @@
       </div>
     </section>
 
-    <section id="que-hacemos">
-      <div>
-        <div class="container bg bg-secondary w-100
-      h-auto mt-5">
-          <div>
-            <h2>Que hacemos</h2>
-          </div>
+     <!--Danos un impulso imagenes-->
+  <div id="caja1">
+    <div class="container text-center mi-seccion">
+      <div class="mt-5 mb-5">
+        <h2 id="impulso-texto" class="text-white text-center">DÁNOS UN IMPULSO</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 mb-5">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/musicac.png"
+              alt="Imagen 1"
+              class="img-fluid zoom-img"
+            />
+            <div class="cont-img mt-3 mi-div">
+              <div class="texto-imagen">Conviertete en</div>
+              <div>
+                <p class="texto-principal-imagen">
+                  Inversor/a
+                  <br />
+                  social
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3 mb-5">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/deportec.png"
+              alt="Imagen 2"
+              class="img-fluid zoom-img"
+            />
+            <div class="cont-img mt-3 mi-div">
+              <div class="texto-imagen">Súmate a un</div>
+              <div>
+                <p class="texto-principal-imagen">voluntariado</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3 mb-5">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/dibujoc.png"
+              alt="Imagen 3"
+              class="img-fluid zoom-img"
+            />
+            <div class="cont-img mt-3 mi-div">
+              <div class="texto-imagen">Solicita</div>
+              <div>
+                <p class="texto-principal-imagen">
+                  nuestras
+                  <br />
+                  charlas
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3 mb-5">
+          <a href="enlace_a_tu_destino">
+            <img
+              src="./public/img/danzac.png"
+              alt="Imagen 4"
+              class="img-fluid zoom-img"
+            />
+            <div class="cont-img mt-3 mi-div">
+              <div class="texto-principal-imagen">Compra</div>
+              <div>
+                <p class="texto-imagen">
+                  Un producto
+                  <br />
+                  con causa
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
 
     <!--video institucional-->
     <section class="container">
@@ -369,24 +441,9 @@
       </div>
     </section>
 
-    <!--frase-->
-    <div class="container">
-      <div class="mt-5">
-        <h1 class="text-center display-4">
-          <span class="text-secondary">“Transformamos vidas con amor, compromiso, honestidad y gratitud, construyendo paz.”</span>
-          <span class="text-secondary"></span>
-          <span class="text-primary"></span>
-          <span class="guerreras"></span>
-        </h1>
-      </div>
-    </div>
-  </div>
-
-    
-
     <!--carrusel inicio-->
     <section>
-      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div id="carouselExampleRide" class="container carousel slide" data-bs-ride="true">
         <div class="carousel-inner justify-content-center">
           <div class="carousel-item active">
             <img src="./public/img/ff1.jpg" class="img-fluid w-100" alt="..." />
@@ -432,12 +489,81 @@
       </div>
     </section>
 
-    <section id="contacto">
-      <div>
-        <div class="container bg bg-secondary w-100
-      h-auto mt-5">
-          <div>
-            <h2>Contactanos</h2>
+    <!--contacto-->
+    <section class="container mt-5 text-center align-items-center" id="contacto">
+      <div class="mt-5 mb-5">
+        <h2 class="sobre" id="impulso-texto">
+          CONTACTO
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-6 w-100 mb-2">
+          <div class="card">
+            <div class="card-body">
+              
+    <div class="contenedor">
+      <div class="row">
+        <div class="col-md-3 p-2 text-center">
+          <div class="item1">
+            <a
+              class="btn mr-2 p-2"
+              href="https://github.com/Arabio29"
+              target="_blank"
+              ><i class="fa-solid fa-comments fa-lg" style="color: #ff4de9"></i
+            ></a>
+            <a href="" class="nav-link">Chatea con nosotros</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-2 text-center">
+          <div class="item1">
+            <a
+              class="btn mr-2 p-2"
+              href="https://github.com/Arabio29"
+              target="_blank"
+              ><i class="fa-solid fa-phone fa-lg" style="color: #ff4de9"></i
+            ></a>
+            <a href="" class="nav-link">Llamanos</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-2 text-center">
+          <div class="item1">
+            <a
+              class="btn mr-2 p-2"
+              href="https://github.com/Arabio29"
+              target="_blank"
+              ><i class="fa-solid fa-envelope fa-lg" style="color: #ff4de9"></i
+            ></a>
+            <a href="" class="nav-link">Correo</a>
+          </div>
+        </div>
+
+        <div class="col-md-3 p-2 text-center d-flex justify-content-center align-items-center">
+          <div class="item4">
+            <a class="btn boton-redondo boton-donar"
+              ><i
+                class="fa-solid fa-heart fa-lg mr-2"
+                style="color: #ffffff"
+              ></i>
+              Quiero donar</a
+            >  
+          </div>
+        </div>
+      </div>
+    </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 w-100">
+          <div class="card">
+            <div class="card-body">
+              <div><p><b>Ubicación:</b> Manzana L - Lote 20 Barrio La Fortaleza, Cúcuta, Norte de Santander.</p></div>
+              <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9272285252705!2d-72.55429272906093!3d7.902671616320399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e664f5b9cd15efd%3A0xf2159b52c2c4e66e!2sFundaci%C3%B3n%20princesas%20guerreras!5e0!3m2!1ses!2sco!4v1700073170289!5m2!1ses!2sco" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa-iframe"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
