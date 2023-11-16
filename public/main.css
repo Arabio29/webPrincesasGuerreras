@@ -136,10 +136,6 @@ video {
   font-size: 64px;
 }
 
-.footerr{
-  background-color: #55B5FF;
-}
-
 .busca input{
   border-radius: 20px;
 }
@@ -172,8 +168,7 @@ h2.sobre {
   background-color: #FF4DE9;
 }
 
-.hacemos {
-  background-color: #ff4de9;
+.hacemos {;
   height: auto;
   padding: 20px;
 }
@@ -210,6 +205,33 @@ h2.sobre {
   height: auto;
 }
 
+
+.footerr{
+  background-color: #B41BFF;
+}
+
+.logo-footer {
+  max-width: 100%;
+  height: auto;
+  width: 150px;
+}
+
+footer a {
+  color: white;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+}
+
+.derechos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #332431 !important;
+}
 
 
 
