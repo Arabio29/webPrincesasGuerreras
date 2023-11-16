@@ -29,8 +29,6 @@ a {
   background-color: #FF4DE9;
 }
 
-
-
 #hero {
   display: flex;
   justify-content: end;
@@ -44,10 +42,6 @@ a {
   flex-direction: column;
   display: flex;
   z-index: 2;
-}
-
-.titulo-liderazgo{
-  
 }
 
 .titulo h1 {
@@ -172,6 +166,51 @@ h2.sobre {
   top: 0;
   left: 0;
 }
+
+#caja2{
+  max-widtht: 100% !important;
+  background-color: #FF4DE9;
+}
+
+.hacemos {
+  background-color: #ff4de9;
+  height: auto;
+  padding: 20px;
+}
+
+.hacemos-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+.custom-section{
+  color: white;
+  margin: 10px;
+}
+.custom-section h2{
+  font-size: 45px;
+  line-height: 40px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.custom-section p{
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  text-align: left;
+}
+
+.custom-section img {
+  max-width: 70%;
+  height: auto;
+}
+
+
 
 
 
